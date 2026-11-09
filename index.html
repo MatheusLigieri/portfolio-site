@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matheus Ligieri // Engenharia de Software</title>
+    <meta name="description" content="Portfólio de Matheus Ligieri, engenheiro de software sênior: arquitetura, integração e operação de plataformas digitais em escala." />
+    <meta name="theme-color" content="#0B0B1F" />
+    <meta property="og:title" content="Matheus Ligieri // Engenharia de Software" />
+    <meta property="og:description" content="Arquitetura, integração e operação de plataformas digitais em escala." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- avoid-ai-design-ignore: K7 · :focus-visible está em styles/base.css e styles/main.css -->
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="topbar">
+      <nav class="topbar__inner wrap" aria-label="Principal">
+        <div class="topbar__group">
+          <a class="topbar__link" href="#casos" data-i18n="nav.cases">Casos</a>
+          <a class="topbar__link" href="#trajetoria" data-i18n="nav.timeline">Trajetória</a>
+        </div>
+        <a href="#topo" class="brand" data-i18n-aria="nav.home" aria-label="Matheus Ligieri, início">
+          <span>Matheus</span><span>Ligieri</span>
+        </a>
+        <div class="topbar__group topbar__group--end">
+          <a class="topbar__link" href="#cardapio" data-i18n="nav.stack">Stack</a>
+          <div class="lang" role="group" aria-label="Idioma / Language">
+            <button type="button" class="lang__btn" data-lang="pt-br" aria-pressed="true">PT</button>
+            <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <a href="#contato" class="btn btn--sm" data-i18n="nav.cta">Falar comigo</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <noscript>
+        <!-- Versão sem JavaScript. Mantenha alinhada com scripts/content.js. -->
+        <div class="noscript wrap">
+          <h1>Matheus // Engenharia de Software</h1>
+          <p class="lead">Senior Software Engineer: arquitetura, integração e operação de plataformas digitais em escala.</p>
+          <h2>Casos</h2>
+          <ul>
+            <li>Orchestrator: engine que move diariamente ~300 mil carrinhos para uma base de menor custo, num checkout omnichannel com 8+ tipos de produto.</li>
+            <li>Click &amp; Retira: integração entre fretes, plataforma de pedidos, omnichannel e lojas físicas, com rollout controlado loja a loja.</li>
+            <li>Next-Day: teste A/B na engine de frete e modalidade modular, com elegibilidade por CEP, estoque, CD, horário de corte e transportadora.</li>
+            <li>Campanha de TV com QR Code: backend completo do sorteio e dos carrinhos de uma campanha em que QR Codes nos comerciais de TV liberavam descontos.</li>
+            <li>Pagamentos sem fila travada: arquitetura orientada a eventos para pagamentos e reembolsos médicos.</li>
+            <li>Imagens em tempo real: microsserviços orientados a eventos para câmeras de acesso de um bairro.</li>
+          </ul>
+          <h2>Trajetória</h2>
+          <ul>
+            <li>Ago 2025 a hoje: Grupo SBF, Senior Software Engineer</li>
+            <li>Nov 2021 a ago 2025: CVCCorp, Software Engineer Specialist (Go)</li>
+            <li>Mar 2021 a nov 2021: eNUBE.me, Software Engineering Manager e sócio</li>
+            <li>Ago 2020 a mar 2021: eNUBE.me, Senior Software Engineer</li>
+            <li>Nov 2017 a ago 2020: eNUBE.me, full stack, front-end e DevOps</li>
+          </ul>
+          <h2>Contato</h2>
+          <ul>
+            <li><a href="mailto:matheusligieri@gmail.com">matheusligieri@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/ligieri/">LinkedIn</a></li>
+            <li><a href="https://github.com/MatheusLigieri">GitHub</a></li>
+          </ul>
+        </div>
+      </noscript>
+      <div id="app"></div>
+    </main>
+
+    <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-dialog-title">
+      <div class="case-dialog__head">
+        <span class="tarja tarja--accent" id="case-dialog-tag"></span>
+        <button type="button" class="case-dialog__close" id="case-dialog-close" aria-label="Fechar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <h3 class="case-dialog__title" id="case-dialog-title"></h3>
+      <dl class="case-dialog__body" id="case-dialog-body"></dl>
+      <p class="stack-line" id="case-dialog-stack"></p>
+    </dialog>
+
+    <script src="./scripts/content.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+  </body>
+</html>
